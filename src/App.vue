@@ -1,4 +1,8 @@
 <template>
+<div>
+  {{ $store.state.message }}
+  {{ $store.getters.title }}
+  {{ $store.getters.fullTitle }}
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
@@ -10,7 +14,7 @@
     </li>
   </ul>
   <router-view />
-
+</div>
 </template>
 
 <style>
